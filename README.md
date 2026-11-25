@@ -1,4 +1,4 @@
-# signo-fi
+# Signo
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,145 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-signo-fi is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://signo.fi/
+Signo provides AI-powered agents that continuously monitor your DeFi positions across multiple protocols, surfacing risks, opportunities, and actionable plans. Users can configure agents to watch specific assets, set limits, and receive automated signals with recommended trades or protective actions. The platform offers a web interface and integrates with wallets, supporting assets like USDC, ETH, and various yield strategies. Signo aims to simplify DeFi management by automating monitoring and decision support, helping users stay on top of market movements 24/7.
+
+**Areas:** DeFi · AI · Monitoring · Automation · Finance
+
+## Signo on APIs.io
+
+Everything profiled for Signo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/signo-fi/](https://apis.io/providers/signo-fi/)** — or go straight to one of the APIs or properties below.
+
+### APIs (10)
+
+- [Signo Account API](https://apis.io/apis/signo-fi/signo-fi-account-api/) — Usage, credit balance, and capability discovery.
+- [Signo Agents API](https://apis.io/apis/signo-fi/signo-fi-agents-api/) — Programmatic alerts (price / yield / health-factor / portfolio-move / schedule / a plain-English condition) scoped to your tenant. Not metered by credits —…
+- [Signo Create an agent API](https://apis.io/apis/signo-fi/signo-fi-create-an-agent-api/) — No API key needed. Any assistant can create a Notify or Prepare agent for a wallet it does not control, or request an early-access Execute permission for an…
+- [Signo Execution API](https://apis.io/apis/signo-fi/signo-fi-execution-api/) — Re-quote and simulate steps at sign time.
+- [Signo Partner surfaces API](https://apis.io/apis/signo-fi/signo-fi-partner-surfaces-api/) — Catalog-backed, contextual Signo agents embedded in partner pages. Keep the `sg_` key on the partner backend: catalog and resolve responses are…
+- [Signo Planning API](https://apis.io/apis/signo-fi/signo-fi-planning-api/) — Turn intent into signable transactions.
+- [Signo Positions API](https://apis.io/apis/signo-fi/signo-fi-positions-api/) — A wallet's addressable positions, each row carrying the canonical composite `id` a `position` subject is named by. Requires the `agents` scope (the same…
+- [Signo Shield API](https://apis.io/apis/signo-fi/signo-fi-shield-api/) — Read a Shield proposal, its authorized permission and its execution runs. Partner key required; a proposal is readable only by the tenant that drafted it.
+- [Signo Telegram API](https://apis.io/apis/signo-fi/signo-fi-telegram-api/) — Wallet Telegram link state for partner Turn on buttons. Requires the `agents` scope (there is no separate telegram scope). Never returns chat ids or usernames.
+- [Signo Webhook delivery API](https://apis.io/apis/signo-fi/signo-fi-webhook-delivery-api/) — Register an HTTPS endpoint that agent triggers are pushed to, and pull/replay trigger history. See the `webhooks` section below for the delivery contract…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Signo Fi Webhooks](https://apis.io/asyncapis/signo-fi/signo-fi-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Signo Agentic Access](https://apis.io/agentic-access/signo-fi/signo-fi-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [AgentPatchRequest](https://apis.io/schemas/signo-fi/signo-fi-agent-patch-request/)
+- [IntentRequest](https://apis.io/schemas/signo-fi/signo-fi-intent-request/)
+- [IntentResponse](https://apis.io/schemas/signo-fi/signo-fi-intent-response/)
+- [ReencodeResponse](https://apis.io/schemas/signo-fi/signo-fi-reencode-response/)
+- [ShieldPermissionRequest](https://apis.io/schemas/signo-fi/signo-fi-shield-permission-request/)
+- [SimulateResponse](https://apis.io/schemas/signo-fi/signo-fi-simulate-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Signo Fi Context](https://apis.io/jsonld/signo-fi/signo-fi-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Signo API Rules](https://apis.io/rules/signo-fi/signo-fi-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Signo Authentication](https://apis.io/security/signo-fi/signo-fi-authentication/)
+- [Signo Domain Security](https://apis.io/security/signo-fi/signo-fi-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Signo Plans Pricing](https://apis.io/plans/signo-fi/signo-fi-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://signo.fi/)
+- [Documentation](https://docs.signo.fi/)
+- [Getting started](https://docs.signo.fi/get-started)
+- [API reference](https://docs.signo.fi/api-reference)
+- [Pricing](https://signo.fi/pricing)
+- [Blog](https://signo.fi/blog)
+- [Terms of service](https://signo.fi/legal/terms)
+- [Privacy policy](https://signo.fi/legal/privacy)
+- [GitHub](https://github.com/FlipLabsAI)
+
+## API Evangelist rating
+
+**Kin Score 55.5** — strong · rubric 0.28.0 · scored 2026-11-24
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 71.7 |
+| Contract governance | 79.1 |
+| Operational transparency | 11.9 |
+| Developer ergonomics | 49.3 |
+| Access clarity | 48.5 |
+
+**Agent readiness 62.8** — agent-native
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | verified |
+| Error Semantics | verified |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+
+**Regulatory alignment 17.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/signo-fi/](https://apis.io/providers/signo-fi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Signo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/signo-fi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
